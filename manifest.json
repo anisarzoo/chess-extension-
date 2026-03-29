@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Free Multiplayer Chess",
+  "version": "1.0",
+  "description": "Dedicated serverless multiplayer chess. Play anyone, anywhere, instantly in your side panel. No accounts, no ads.",
+  "permissions": ["sidePanel", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "action": {
+    "default_title": "Play Multiplayer Chess",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  }
+}
