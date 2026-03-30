@@ -283,8 +283,11 @@ class ChessGame {
             }
         }
 
-        for (let i = 0; i < 8; i++) {
-            for (let j = 0; j < 8; j++) {
+        const rows = this.myColor === 'w' ? [0, 1, 2, 3, 4, 5, 6, 7] : [7, 6, 5, 4, 3, 2, 1, 0];
+        const cols = this.myColor === 'w' ? [0, 1, 2, 3, 4, 5, 6, 7] : [7, 6, 5, 4, 3, 2, 1, 0];
+
+        for (let i of rows) {
+            for (let j of cols) {
                 const square = board[i][j];
                 const squareElement = document.createElement('div');
                 const squareName = this.getSquareName(i, j);
